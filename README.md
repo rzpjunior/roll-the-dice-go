@@ -1,8 +1,3 @@
-# The Dice Game
-
-A Kubernetes application written in GoLang and deployed to the Digital Ocean managed
-Kubernetes service.
-
 # Building
 
 ```
@@ -21,7 +16,3 @@ go test
 go build
 ./dice-game
 ```
-
-# Kubernetes Endpoint
-
- * http://digitalocean.knobs.io/
