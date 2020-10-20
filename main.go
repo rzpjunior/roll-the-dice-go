@@ -15,7 +15,7 @@ var indexTmpl = template.Must(template.ParseFiles("templates/index.html"))
 // HandleGet - HTTP GET
 func HandleGet(w http.ResponseWriter, r *http.Request) {
 
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+	http.Handle("/img/", http.StripPrefix("/img/", http.FileServer(http.Dir("img"))))
 
 	err := indexTmpl.Execute(w, nil)
 	if err != nil {
